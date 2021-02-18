@@ -20,3 +20,6 @@ cp $SOURCE_DIR/.tmuxline.conf $HOME/.tmuxline.conf
 INSTALL_DIR=~/.config/nvim
 mkdir -p $INSTALL_DIR
 cp $SOURCE_DIR/init.vim $INSTALL_DIR/init.vim
+
+# install plugins with vim-plug. vim-plug must be installed separately already
+nvim --headless +PlugInstall +qall
