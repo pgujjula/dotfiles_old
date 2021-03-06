@@ -21,5 +21,8 @@ INSTALL_DIR=~/.config/nvim
 mkdir -p $INSTALL_DIR
 cp $SOURCE_DIR/init.vim $INSTALL_DIR/init.vim
 
+# ghci config
+cp $SOURCE_DIR/.ghci $HOME/.ghci
+
 # install plugins with vim-plug. vim-plug must be installed separately already
 nvim --headless +PlugInstall +qall
