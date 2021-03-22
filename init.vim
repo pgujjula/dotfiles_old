@@ -1,16 +1,24 @@
 " Make sure to install vim-plug first, see https://github.com/junegunn/vim-plug
-
 " PLUGINS
 call plug#begin(stdpath('data') . '/plugged')
-Plug 'iCyMind/NeoSolarized'
-Plug 'cocopon/iceberg.vim'
+
+""" git
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
-" Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+""" language support
 Plug 'neovimhaskell/haskell-vim'
+" Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+""" themes
+Plug 'cocopon/iceberg.vim'
+" Plug 'iCyMind/NeoSolarized'
+
+""" statusline
 Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
 Plug 'edkolev/tmuxline.vim'
+" Plug 'vim-airline/vim-airline-themes'
+
 call plug#end()
 
 let g:airline_powerline_fonts = 1
