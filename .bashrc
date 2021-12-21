@@ -6,7 +6,7 @@ if [ -f /etc/bashrc ]; then
 fi
 
 # User specific environment
-PATH="$HOME/.local/bin:$HOME/bin:$PATH"
+PATH="$HOME/.cabal/bin:$HOME/.ghcup/bin:$HOME/.local/bin:$HOME/bin:$PATH"
 EDITOR="$HOME/.local/bin/nvim"
 export PATH
 
