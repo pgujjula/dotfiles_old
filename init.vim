@@ -59,6 +59,9 @@ set shiftwidth=2
 set termguicolors
 set background=dark
 colorscheme iceberg
+" Turn off background color, so that the background color is automatically
+" that of the terminal theme.
+hi Normal guibg=NONE ctermbg=NONE
 
 " Map <Alt-f> and <Alt-d> to move back and forth between tabs
 nnoremap <a-f> :tabn<CR>
