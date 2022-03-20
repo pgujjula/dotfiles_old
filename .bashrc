@@ -17,6 +17,9 @@ export MANWIDTH=999
 # Uncomment the following line if you don't like systemctl's auto-paging feature:
 # export SYSTEMD_PAGER=
 
+# User specific aliases
+alias ls='ls --color=auto'
+
 GPG_TTY=$(tty)
 export GPG_TTY
 
