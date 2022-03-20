@@ -14,6 +14,9 @@ export PATH
 export MANPAGER='nvim +Man!'
 export MANWIDTH=999
 
+# FZF config
+export FZF_DEFAULT_COMMAND='ag --hidden --ignore .git --ignore .mozilla --ignore .cache --ignore .config --ignore .local -l -g ""'
+
 # Uncomment the following line if you don't like systemctl's auto-paging feature:
 # export SYSTEMD_PAGER=
 
