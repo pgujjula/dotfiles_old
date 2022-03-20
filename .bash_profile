@@ -7,5 +7,4 @@ fi
 
 # User specific environment and startup programs
 
-eval "$(dircolors /etc/DIR_COLORS)"
 export GPG_TTY=$(tty)
