@@ -10,6 +10,10 @@ PATH="$HOME/.cabal/bin:$HOME/.ghcup/bin:$HOME/.local/bin:$HOME/bin:$PATH"
 EDITOR="$HOME/.local/bin/nvim"
 export PATH
 
+# Open manpages with neovim
+export MANPAGER='nvim +Man!'
+export MANWIDTH=999
+
 # Uncomment the following line if you don't like systemctl's auto-paging feature:
 # export SYSTEMD_PAGER=
 
