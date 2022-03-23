@@ -38,3 +38,7 @@ nvman ()
 {
   nvim -c ":Man $1 | only"
 }
+
+# For Ubuntu development
+export DEBFULLNAME="Preetham Gujjula"
+export DEBEMAIL="ubuntu@mail.preetham.io"
