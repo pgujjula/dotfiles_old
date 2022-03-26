@@ -7,7 +7,7 @@ fi
 
 # User specific environment
 PATH="$HOME/.cabal/bin:$HOME/.ghcup/bin:$HOME/.local/bin:$HOME/bin:$PATH"
-EDITOR="$HOME/.local/bin/nvim"
+EDITOR="nvim"
 export PATH
 
 # Open manpages with neovim
