@@ -13,15 +13,18 @@ cp $SOURCE_DIR/.bashrc $HOME/.bashrc
 cp $SOURCE_DIR/.bash_profile $HOME/.bash_profile
 
 # Tmux config
-cp $SOURCE_DIR/.tmux.conf           $HOME/.tmux.conf
-cp $SOURCE_DIR/.tmuxline.conf       $HOME/.tmuxline.conf --no-dereference
-cp $SOURCE_DIR/.tmuxline.conf.dark  $HOME/.tmuxline.conf.dark
-cp $SOURCE_DIR/.tmuxline.conf.light $HOME/.tmuxline.conf.light
+INSTALL_DIR=~/.config/tmux
+mkdir -p $INSTALL_DIR
+cp $SOURCE_DIR/tmux/tmux.conf           $INSTALL_DIR/tmux.conf
+cp $SOURCE_DIR/tmux/tmuxline.conf       $INSTALL_DIR/tmuxline.conf --no-dereference
+cp $SOURCE_DIR/tmux/tmuxline.conf.dark  $INSTALL_DIR/tmuxline.conf.dark
+cp $SOURCE_DIR/tmux/tmuxline.conf.light $INSTALL_DIR/tmuxline.conf.light
 
 # Neovim config
 INSTALL_DIR=~/.config/nvim
 mkdir -p $INSTALL_DIR
 cp $SOURCE_DIR/init.vim $INSTALL_DIR/init.vim
+cp $SOURCE_DIR/coc-settings.json $INSTALL_DIR/coc-settings.json
 
 # Git config
 cp $SOURCE_DIR/.gitconfig $HOME/.gitconfig
